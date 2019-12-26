@@ -52,5 +52,14 @@ public class Main {
 			return MV;
 		}
 	}
-	
+	@RequestMapping("/Make")
+	public void createNewAccount(Bank b) {
+		bs.MakeAccount(b);
+		System.out.println(b);
+	}
+	@RequestMapping("/create")
+	public ModelAndView createPage() {
+		ModelAndView MV = new ModelAndView("create");
+		return MV;
+	}
 }

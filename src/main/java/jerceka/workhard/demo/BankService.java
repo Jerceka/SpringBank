@@ -28,4 +28,7 @@ public class BankService {
 		boolean checkPassword = repo.existsBypassword(password);
 		return checkName && checkPassword;
 	}
+	public void MakeAccount(Bank bank){
+		repo.save(bank);
+	}
 }
