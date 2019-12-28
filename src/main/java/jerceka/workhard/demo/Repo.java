@@ -11,4 +11,5 @@ public interface Repo extends JpaRepository<Bank, Integer>{
 	List<Bank> findByPassword(String password);
 	Boolean existsByName(String name);
 	Boolean existsBypassword(String password);
+	List<Bank> deleteByName(String name);
 }
